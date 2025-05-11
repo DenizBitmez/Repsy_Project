@@ -11,7 +11,7 @@ The purpose of this project is to simulate a minimal package management system f
 - Integration with PostgreSQL and MinIO
 - Best practices in Java backend development
 
-It is ideal for junior/mid-level backend developers to practice working with file uploads, storage abstractions, and microservice-friendly design patterns.
+It is ideal for junior/mid-level backend developers to practice working with file uploads, storage abstractions, and monolithic-friendly design patterns.
 
 ---
 
@@ -169,34 +169,6 @@ Make sure PostgreSQL and MinIO are running (or use Docker Compose).
 
 ---
 
-## Acceptance Criteria
-
-* Two REST endpoints are exposed
-* PostgreSQL is used for metadata persistence
-* Two modular storage strategies
-* Dockerized and developer-friendly
-* Complies with HTTP status codes and API best practices
-* Validates and rejects invalid inputs
-
----
-
-## Out of Scope
-
-* No authentication/security
-* No frontend interface
-* No deep validation of `.rep` content beyond format
-
----
-
-## Evaluation Process
-
-* Docker container is pulled and tested
-* REST API is validated with valid and invalid inputs
-* Code quality and structure are reviewed
-* Modular libraries are examined
-
----
-
 ## Contributing
 
 Contributions are welcome! To contribute:
@@ -205,8 +177,6 @@ Contributions are welcome! To contribute:
 2. Create a feature/bugfix branch
 3. Commit your changes
 4. Submit a Pull Request
-
-Make sure your changes are documented and tested.
 
 ---
 
