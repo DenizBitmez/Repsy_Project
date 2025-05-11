@@ -109,7 +109,7 @@ Returns the requested file if available in storage.
 
 ---
 
-## 🗃 Storage Configuration
+## Storage Configuration
 
 In `application.properties`:
 
