@@ -2,7 +2,7 @@
 
 This is a sample **Spring Boot REST API** designed to simulate a minimalistic package repository system for the fictional *Repsy* programming language.
 
-## 🎯 Purpose
+## Purpose
 
 The purpose of this project is to simulate a minimal package management system for educational and demonstration purposes. It showcases:
 
@@ -15,7 +15,7 @@ It is ideal for junior/mid-level backend developers to practice working with fil
 
 ---
 
-## 🧩 Tech Stack
+## Tech Stack
 
 - Java 17 (LTS)
 - Spring Boot
@@ -26,7 +26,7 @@ It is ideal for junior/mid-level backend developers to practice working with fil
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 
@@ -52,7 +52,7 @@ src/main/java/com/example/repsy
 
 ---
 
-## 🚀 Features
+## Features
 
 - Upload endpoint for `.rep` packages and `meta.json` files
 - Download endpoint for fetching uploaded files
@@ -65,7 +65,7 @@ src/main/java/com/example/repsy
 
 ---
 
-## 🔌 REST API Endpoints
+## REST API Endpoints
 
 ### Upload Package
 
@@ -80,7 +80,7 @@ POST /{packageName}/{version}
   - `package.rep` (binary file)
   - `meta.json` (application/json)
 
-📌 *Only valid file types and structures are accepted. Invalid submissions are rejected.*
+ *Only valid file types and structures are accepted. Invalid submissions are rejected.*
 
 ### Sample `meta.json`
 
@@ -130,7 +130,7 @@ STORAGE_STRATEGY=object-storage
 
 ---
 
-## ⚙️ Configuration Example
+## Configuration Example
 
 Example `.env` file:
 
@@ -142,7 +142,7 @@ POSTGRES_URL=jdbc:postgresql://localhost:5432/repsy
 
 ---
 
-## 🐳 Docker Instructions
+## Docker Instructions
 
 Build and run the app:
 
@@ -155,7 +155,7 @@ Make sure PostgreSQL and MinIO are running (or use Docker Compose).
 
 ---
 
-## ✅ Requirements
+## Requirements
 
 * Java 17+
 * Spring Boot
@@ -169,7 +169,7 @@ Make sure PostgreSQL and MinIO are running (or use Docker Compose).
 
 ---
 
-## ✅ Acceptance Criteria
+## Acceptance Criteria
 
 * Two REST endpoints are exposed
 * PostgreSQL is used for metadata persistence
@@ -180,7 +180,7 @@ Make sure PostgreSQL and MinIO are running (or use Docker Compose).
 
 ---
 
-## 🚫 Out of Scope
+## Out of Scope
 
 * No authentication/security
 * No frontend interface
@@ -188,7 +188,7 @@ Make sure PostgreSQL and MinIO are running (or use Docker Compose).
 
 ---
 
-## 🔍 Evaluation Process
+## Evaluation Process
 
 * Docker container is pulled and tested
 * REST API is validated with valid and invalid inputs
