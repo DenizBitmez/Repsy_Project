@@ -1,4 +1,4 @@
-# RepsyProject
+# Repsy Project
 
 This is a sample **Spring Boot REST API** designed to simulate a minimalistic package repository system for the fictional *Repsy* programming language.
 
