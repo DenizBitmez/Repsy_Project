@@ -4,7 +4,6 @@ import io.minio.GetObjectArgs;
 import io.minio.MinioClient;
 import io.minio.PutObjectArgs;
 import io.minio.errors.MinioException;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Service;
@@ -20,10 +19,10 @@ public class ObjectStorageService implements StorageService {
     private final MinioClient minioClient;
     private final String bucket;
 
-    public ObjectStorageService(@Value("${minio.url}") String miniourl,
-                                @Value("${minio.accessKey}") String accessKey,
-                                @Value("${minio.secretKey}") String secretKey,
-                                @Value("${minio.bucket}") String bucket) {
+    public ObjectStorageService(@Value("${storage.minio.url}") String miniourl,
+                                @Value("${storage.minio.accessKey}") String accessKey,
+                                @Value("${storage.minio.secretKey}") String secretKey,
+                                @Value("${storage.minio.bucket}") String bucket) {
         this.minioClient = MinioClient.builder()
                 .endpoint(miniourl)
                 .credentials(accessKey, secretKey)
